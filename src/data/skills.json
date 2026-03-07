@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "id": "frontend",
+      "title": "Frontend",
+      "icon": "🖥️",
+      "skills": [
+        { "name": "Next.js", "level": 90, "icon": "⚡" },
+        { "name": "React.js", "level": 88, "icon": "⚛️" },
+        { "name": "Svelte", "level": 75, "icon": "🔥" },
+        { "name": "Astro.js", "level": 78, "icon": "🚀" },
+        { "name": "TypeScript", "level": 80, "icon": "📘" },
+        { "name": "Tailwind CSS", "level": 92, "icon": "🎨" },
+        { "name": "HTML/CSS", "level": 95, "icon": "🌐" }
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Backend",
+      "icon": "⚙️",
+      "skills": [
+        { "name": "Laravel", "level": 85, "icon": "🛡️" },
+        { "name": "Go", "level": 65, "icon": "🐹" },
+        { "name": "PHP", "level": 80, "icon": "🐘" },
+        { "name": "Node.js", "level": 72, "icon": "🟢" },
+        { "name": "PostgreSQL", "level": 75, "icon": "🐘" },
+        { "name": "Redis", "level": 60, "icon": "🔴" }
+      ]
+    },
+    {
+      "id": "tools",
+      "title": "Tools & Others",
+      "icon": "🛠️",
+      "skills": [
+        { "name": "Figma", "level": 80, "icon": "🎭" },
+        { "name": "Git & GitHub", "level": 88, "icon": "🐙" },
+        { "name": "Vercel", "level": 85, "icon": "▲" },
+        { "name": "Linux", "level": 65, "icon": "🐧" },
+        { "name": "Copywriting", "level": 78, "icon": "✍️" },
+        { "name": "UI/UX Design", "level": 75, "icon": "✨" }
+      ]
+    }
+  ]
+}

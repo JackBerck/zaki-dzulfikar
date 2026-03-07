@@ -1,0 +1,75 @@
+[
+  {
+    "id": "ziggs",
+    "title": "Ziggs (Livetix)",
+    "shortTitle": "Ziggs",
+    "description": "Platform tiket event modern yang dirancang untuk mempermudah manajemen event, mendukung penjualan tiket online dan offline dengan validasi QR code yang aman. Sistem mengimplementasikan arsitektur Action-Service yang skalabel untuk mendukung penjualan multi-channel, pelacakan afiliasi dengan logika komisi, analitik real-time, dan Role-Based Access Control (RBAC) yang kompleks.",
+    "period": "Oktober 2025 – Februari 2026",
+    "tags": [
+      "Laravel 12",
+      "React 19",
+      "TypeScript",
+      "Inertia.js",
+      "PostgreSQL",
+      "Redis",
+      "Tailwind CSS"
+    ],
+    "category": "fullstack",
+    "liveUrl": null,
+    "repoUrl": "https://github.com/JackBerck",
+    "featured": true,
+    "emoji": "🎟️"
+  },
+  {
+    "id": "soedirman-student-summit-2025",
+    "title": "Soedirman Student Summit 2025",
+    "shortTitle": "SSS 2025",
+    "description": "Platform yang menyediakan informasi penting bagi mahasiswa baru Universitas Jenderal Soedirman (Unsoed) 2025 untuk mempersiapkan diri memasuki perguruan tinggi. Website bertujuan mendukung pengembangan mahasiswa dan membangun jaringan antar mahasiswa dari berbagai latar belakang.",
+    "period": "April 2025 – Agustus 2025",
+    "tags": ["Svelte", "Tailwind CSS"],
+    "category": "frontend",
+    "liveUrl": null,
+    "repoUrl": "https://github.com/JackBerck",
+    "featured": true,
+    "emoji": "🎓"
+  },
+  {
+    "id": "peduli-rasa",
+    "title": "PeduliRasa",
+    "shortTitle": "PeduliRasa",
+    "description": "Aplikasi berbasis web yang dirancang untuk menghubungkan pemilik makanan berlebih dengan mereka yang membutuhkan, mengatasi masalah kelaparan dan pemborosan makanan di Indonesia. Platform ini menawarkan akses mudah untuk mencari dan mendistribusikan surplus makanan di berbagai perangkat.",
+    "period": "Oktober 2024 – November 2024",
+    "tags": ["JavaScript", "PHP", "Tailwind CSS"],
+    "category": "fullstack",
+    "liveUrl": null,
+    "repoUrl": "https://github.com/JackBerck",
+    "featured": true,
+    "emoji": "🍱"
+  },
+  {
+    "id": "soedirman-student-summit-2024",
+    "title": "Soedirman Student Summit 2024",
+    "shortTitle": "SSS 2024",
+    "description": "Platform informasi untuk mahasiswa baru Universitas Jenderal Soedirman 2024. Dikembangkan menggunakan Astro.js dan Tailwind CSS untuk performa tinggi dan waktu muat yang sangat cepat.",
+    "period": "April 2024 – Agustus 2024",
+    "tags": ["Astro.js", "Tailwind CSS"],
+    "category": "frontend",
+    "liveUrl": null,
+    "repoUrl": "https://github.com/JackBerck",
+    "featured": false,
+    "emoji": "🏫"
+  },
+  {
+    "id": "code-documentation",
+    "title": "Code Documentation",
+    "shortTitle": "CodeDocs",
+    "description": "Repository GitHub yang menjelaskan berbagai topik pemrograman dan praktik terbaik. Bertujuan untuk memudahkan orang belajar bahasa pemrograman melalui dokumentasi yang terstruktur dan mudah dipahami.",
+    "period": "Maret 2024 – Sekarang",
+    "tags": ["HTML", "CSS", "C++", "JavaScript", "PHP"],
+    "category": "documentation",
+    "liveUrl": null,
+    "repoUrl": "https://github.com/JackBerck",
+    "featured": false,
+    "emoji": "📚"
+  }
+]

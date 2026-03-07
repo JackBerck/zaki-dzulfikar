@@ -1,0 +1,80 @@
+[
+  {
+    "id": "work-web-developer",
+    "type": "work",
+    "title": "Web Developer",
+    "organization": "Self Employed",
+    "period": "Agustus 2025 – Sekarang",
+    "location": "Remote",
+    "description": [
+      "Mengembangkan website responsif dan interaktif berdasarkan kebutuhan klien.",
+      "Memberikan layanan konsultasi untuk website klien.",
+      "Memanfaatkan teknologi modern seperti Bootstrap, Tailwind CSS, Astro.js, React.js, Next.js, dan GitHub."
+    ]
+  },
+  {
+    "id": "org-hmif-saintek",
+    "type": "organization",
+    "title": "Staf Divisi Sains dan Teknologi",
+    "organization": "Himpunan Mahasiswa Informatika Unsoed (HMIF)",
+    "period": "Februari 2025 – Desember 2025",
+    "location": "Purwokerto, Jawa Tengah",
+    "description": [
+      "Memfasilitasi pengembangan akademik dan teknis mahasiswa Informatika melalui program kerja seperti workshop dan seminar teknologi.",
+      "Mengelola informasi terkait kompetisi teknologi tingkat nasional (GEMASTIK, PKM) untuk mendorong partisipasi mahasiswa.",
+      "Berkolaborasi dalam penyelenggaraan 'Soedirman Technophoria', event tingkat nasional yang menampilkan kompetisi web development."
+    ]
+  },
+  {
+    "id": "org-ssdc",
+    "type": "organization",
+    "title": "Head of Community",
+    "organization": "Soedirman Software Developer Community (SSDC)",
+    "period": "Februari 2025 – Desember 2025",
+    "location": "Purwokerto, Jawa Tengah",
+    "description": [
+      "Memimpin komunitas developer mahasiswa yang berfokus pada pembelajaran kolaboratif di bidang software engineering.",
+      "Membangun forum diskusi dan sesi belajar rutin untuk berbagi pengetahuan tentang tech stack modern.",
+      "Mengkoordinasikan partisipasi anggota dalam hackathon dan kompetisi coding."
+    ]
+  },
+  {
+    "id": "vol-sss2025",
+    "type": "volunteer",
+    "title": "Data, Publikasi, Informasi, dan Teknologi",
+    "organization": "Soedirman Student Summit 2025",
+    "period": "April 2025 – Agustus 2025",
+    "location": "Purwokerto, Jawa Tengah",
+    "description": [
+      "Program kerja dari Divisi Pengembangan Sumber Daya Mahasiswa BEM-U Unsoed.",
+      "Mengumpulkan data mahasiswa baru Unsoed.",
+      "Mengembangkan website Soedirman Student Summit berisi informasi penting untuk mahasiswa baru."
+    ]
+  },
+  {
+    "id": "vol-sds",
+    "type": "volunteer",
+    "title": "Project Manager",
+    "organization": "Soedirman Digital School",
+    "period": "Mei 2024 – Agustus 2024",
+    "location": "Purwokerto, Jawa Tengah",
+    "description": [
+      "Mengembangkan rencana kegiatan keseluruhan, termasuk menentukan tema, tujuan, dan format event.",
+      "Mengkoordinasikan dan mendelegasikan tugas sesuai kemampuan dan tanggung jawab setiap anggota tim.",
+      "Mengembangkan strategi komunikasi untuk menarik peserta, termasuk penggunaan media sosial."
+    ]
+  },
+  {
+    "id": "vol-sss2024",
+    "type": "volunteer",
+    "title": "Data, Publikasi, Informasi, dan Teknologi",
+    "organization": "Soedirman Student Summit 2024",
+    "period": "April 2024 – Agustus 2024",
+    "location": "Purwokerto, Jawa Tengah",
+    "description": [
+      "Program kerja dari Divisi Pengembangan Sumber Daya Mahasiswa BEM-U Unsoed.",
+      "Mengumpulkan data mahasiswa baru Unsoed.",
+      "Mengembangkan website Soedirman Student Summit 2024 menggunakan Astro.js dan Tailwind CSS."
+    ]
+  }
+]

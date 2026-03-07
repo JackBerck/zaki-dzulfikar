@@ -1,0 +1,32 @@
+[
+  {
+    "id": "mevn-codepolitan",
+    "title": "MEVN Stack",
+    "issuer": "Codepolitan",
+    "date": "April 2024",
+    "year": 2024,
+    "icon": "🏅",
+    "color": "yellow",
+    "verifyUrl": null
+  },
+  {
+    "id": "dbs-dicoding",
+    "title": "DBS Foundation Coding Camp 2024",
+    "issuer": "Dicoding",
+    "date": "Juni 2024",
+    "year": 2024,
+    "icon": "🏆",
+    "color": "cyan",
+    "verifyUrl": null
+  },
+  {
+    "id": "aws-backend-dicoding",
+    "title": "AWS Back-End Academy",
+    "issuer": "Dicoding",
+    "date": "Maret 2024",
+    "year": 2024,
+    "icon": "☁️",
+    "color": "pink",
+    "verifyUrl": null
+  }
+]
