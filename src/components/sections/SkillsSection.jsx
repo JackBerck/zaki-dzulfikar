@@ -1,6 +1,7 @@
 import skillsData from "@/data/skills.json";
 import SectionHeader from "@/components/ui/SectionHeader";
 import NeoCard from "@/components/ui/NeoCard";
+import Image from "next/image";
 
 export default function SkillsSection() {
   return (
@@ -23,11 +24,6 @@ export default function SkillsSection() {
               "text-[var(--accent-cyan)]",
               "text-[var(--accent-pink)]",
             ];
-            const barColors = [
-              "bg-[var(--accent-yellow)]",
-              "bg-[var(--accent-cyan)]",
-              "bg-[var(--accent-pink)]",
-            ];
 
             return (
               <NeoCard
@@ -45,28 +41,25 @@ export default function SkillsSection() {
                   </h3>
                 </div>
 
-                {/* Skills list */}
-                <div className="space-y-4">
+                {/* Skills grid */}
+                <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
                   {category.skills.map((skill) => (
-                    <div key={skill.name}>
-                      <div className="flex items-center justify-between mb-1.5">
-                        <div className="flex items-center gap-2">
-                          <span className="text-base">{skill.icon}</span>
-                          <span className="text-sm font-medium text-[var(--text-primary)] font-[var(--font-inter)]">
-                            {skill.name}
-                          </span>
-                        </div>
-                        <span className="text-xs font-mono text-[var(--text-muted)]">
-                          {skill.level}%
-                        </span>
-                      </div>
-                      {/* Progress bar */}
-                      <div className="h-1.5 w-full bg-[var(--bg-secondary)] border border-[var(--border-muted)]">
-                        <div
-                          className={`h-full ${barColors[catIdx]} transition-all`}
-                          style={{ width: `${skill.level}%` }}
+                    <div
+                      key={skill.name}
+                      className="flex flex-col items-center gap-2 p-3 border border-[var(--border-muted)] bg-[var(--bg-secondary)] hover:border-[var(--border-primary)] transition-all group"
+                      title={skill.name}
+                    >
+                      <div className="relative w-10 h-10 grayscale group-hover:grayscale-0 transition-all">
+                        <Image
+                          src={skill.logo}
+                          alt={skill.name}
+                          fill
+                          className="object-contain"
                         />
                       </div>
+                      <span className="text-[10px] font-medium text-[var(--text-muted)] text-center leading-tight font-[var(--font-inter)] group-hover:text-[var(--text-primary)] transition-colors">
+                        {skill.name}
+                      </span>
                     </div>
                   ))}
                 </div>

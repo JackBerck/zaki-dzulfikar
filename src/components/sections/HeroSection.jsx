@@ -35,7 +35,7 @@ export default function HeroSection() {
         style={{ animationDelay: "1s" }}
       />
 
-      <div className="container-main relative z-10 pt-24 pb-16">
+      <div className="container-main relative z-10 pt-24 pb-16 flex items-center justify-between">
         <div className="max-w-4xl">
           {/* Status badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-[var(--accent-green)] bg-[var(--bg-card)] mb-6 animate-fade-in-up">
@@ -106,14 +106,14 @@ export default function HeroSection() {
             <NeoButton
               variant="primary"
               size="lg"
-              href="/cv-zaki-dzulfikar.pdf"
+              href="https://docs.google.com/document/d/13ovPmela_O17lFKt_yJj7Rl1A01N9hNf/edit?usp=sharing&ouid=101396003021326306238&rtpof=true&sd=true"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Download size={18} />
               Download CV
             </NeoButton>
-            <NeoButton variant="outline" size="lg" onClick={scrollToContact}>
+            <NeoButton variant="outline" size="lg" onClick={scrollToContact} href="https://wa.me/6285786470923" target="_blank" rel="noopener noreferrer">
               <Mail size={18} />
               Hubungi Saya
             </NeoButton>
@@ -140,6 +140,9 @@ export default function HeroSection() {
             ))}
           </div>
         </div>
+        {/* <div className="max-w-4xl hidden lg:block animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+          <img src="/img/zaki-dzulfikar.png" alt="Foto Zaki Dzulfikar" />
+        </div> */}
       </div>
 
       {/* Scroll indicator */}

@@ -1,5 +1,15 @@
 [
   {
+    "id": "microsoft-elevate-codepolitan",
+    "title": "Microsoft Elevate Training Center",
+    "issuer": "Dicoding",
+    "date": "Februari 2026",
+    "year": 2026,
+    "icon": "🏅",
+    "color": "cyan",
+    "verifyUrl": null
+  },
+  {
     "id": "mevn-codepolitan",
     "title": "MEVN Stack",
     "issuer": "Codepolitan",

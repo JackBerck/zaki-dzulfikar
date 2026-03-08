@@ -99,10 +99,6 @@ export default function Footer() {
         {/* Divider */}
         <div className="mt-8 pt-6 border-t border-[var(--border-muted)] flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[var(--text-muted)] font-[var(--font-inter)]">
           <p>© {currentYear} Muhammad Zaki Dzulfikar. All rights reserved.</p>
-          <p className="flex items-center gap-1">
-            Dibuat dengan <span className="text-[var(--accent-pink)]">♥</span>{" "}
-            menggunakan Next.js & Tailwind CSS
-          </p>
         </div>
       </div>
     </footer>

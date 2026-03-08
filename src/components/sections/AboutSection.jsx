@@ -62,12 +62,14 @@ export default function AboutSection() {
                 pengalaman terbaik bagi pengguna.
               </p>
               <p>
-                Di luar coding, saya aktif berorganisasi sebagai{" "}
+                Di luar coding, saya aktif berorganisasi dan mengeksplorasi hobi
+                lainnya, seperti mekanik, bermusik, dan mendaki gunung. Saya
+                selalu bersemangat untuk belajar hal baru dan{" "}
                 <span className="text-[var(--accent-cyan)] font-semibold">
-                  Head of Community
+                  berkolaborasi
                 </span>{" "}
-                di SSDC dan staf di HMIF Unsoed. Di waktu luang, saya
-                mengeksplorasi hobi mekanik, bermusik, dan mendaki gunung.
+                dalam proyek yang menantang. Mari terhubung dan ciptakan sesuatu
+                yang luar biasa bersama!
               </p>
             </div>
 
@@ -126,8 +128,12 @@ export default function AboutSection() {
               variant="accent"
               className="p-6 flex flex-col items-center gap-4"
             >
-              <div className="w-32 h-32 bg-[var(--accent-yellow)]/10 border-2 border-[var(--accent-yellow)] flex items-center justify-center text-6xl font-bold font-[var(--font-space)] text-[var(--accent-yellow)]">
-                ZD
+              <div className="aspect-square bg-[var(--accent-yellow)]/10 border-2 border-[var(--accent-yellow)] flex items-center justify-center text-6xl font-bold font-[var(--font-space)] text-[var(--accent-yellow)]">
+                <img
+                  src="/img/zaki-dzulfikar.png"
+                  alt="Foto Zaki Dzulfikar"
+                  className="max-h-64 lg:max-h-96"
+                />
               </div>
               <div className="text-center">
                 <p className="font-[var(--font-space)] font-bold text-xl text-[var(--text-primary)]">

@@ -1,7 +1,7 @@
 [
   {
     "id": "ziggs",
-    "title": "Ziggs (Livetix)",
+    "title": "Ziggs",
     "shortTitle": "Ziggs",
     "description": "Platform tiket event modern yang dirancang untuk mempermudah manajemen event, mendukung penjualan tiket online dan offline dengan validasi QR code yang aman. Sistem mengimplementasikan arsitektur Action-Service yang skalabel untuk mendukung penjualan multi-channel, pelacakan afiliasi dengan logika komisi, analitik real-time, dan Role-Based Access Control (RBAC) yang kompleks.",
     "period": "Oktober 2025 – Februari 2026",
@@ -15,8 +15,9 @@
       "Tailwind CSS"
     ],
     "category": "fullstack",
+    "image": "/img/projects/ziggs.png",
     "liveUrl": null,
-    "repoUrl": "https://github.com/JackBerck",
+    "repoUrl": "https://ziggs.id/",
     "featured": true,
     "emoji": "🎟️"
   },
@@ -28,8 +29,9 @@
     "period": "April 2025 – Agustus 2025",
     "tags": ["Svelte", "Tailwind CSS"],
     "category": "frontend",
+    "image": "/img/projects/soedirman-student-summit-25.png",
     "liveUrl": null,
-    "repoUrl": "https://github.com/JackBerck",
+    "repoUrl": "https://project-s3-2025.vercel.app/",
     "featured": true,
     "emoji": "🎓"
   },
@@ -41,9 +43,10 @@
     "period": "Oktober 2024 – November 2024",
     "tags": ["JavaScript", "PHP", "Tailwind CSS"],
     "category": "fullstack",
+    "image": null,
     "liveUrl": null,
-    "repoUrl": "https://github.com/JackBerck",
-    "featured": true,
+    "repoUrl": "https://github.com/ahnafi/pedulirasa",
+    "featured": false,
     "emoji": "🍱"
   },
   {
@@ -54,8 +57,9 @@
     "period": "April 2024 – Agustus 2024",
     "tags": ["Astro.js", "Tailwind CSS"],
     "category": "frontend",
+    "image": null,
     "liveUrl": null,
-    "repoUrl": "https://github.com/JackBerck",
+    "repoUrl": "https://s3-pit.vercel.app/",
     "featured": false,
     "emoji": "🏫"
   },
@@ -67,9 +71,10 @@
     "period": "Maret 2024 – Sekarang",
     "tags": ["HTML", "CSS", "C++", "JavaScript", "PHP"],
     "category": "documentation",
+    "image": "/img/projects/code-documentation.png",
     "liveUrl": null,
-    "repoUrl": "https://github.com/JackBerck",
-    "featured": false,
+    "repoUrl": "https://github.com/JackBerck/code-documentation",
+    "featured": true,
     "emoji": "📚"
   }
 ]
