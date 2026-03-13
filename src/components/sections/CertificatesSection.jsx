@@ -63,7 +63,7 @@ export default function CertificatesSection() {
                 {/* Content */}
                 <div className="flex-1">
                   <h3 className="font-[var(--font-space)] font-bold text-[var(--text-primary)] text-base leading-tight mb-2">
-                    {cert.title[language] || cert.title.id}
+                    {cert.title[language] || cert.title}
                   </h3>
 
                   <div className="flex items-center gap-1.5 mb-1">
