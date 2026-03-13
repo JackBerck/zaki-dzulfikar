@@ -15,6 +15,7 @@ import {
   MessageCircle,
   Telegram,
 } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const socialLinks = [
   { label: "GitHub", icon: Github, href: "https://github.com/JackBerck" },
@@ -36,21 +37,23 @@ const socialLinks = [
   },
 ];
 
-const contactInfo = [
-  {
-    icon: Mail,
-    label: "zakidzlfkr@gmail.com",
-    href: "mailto:zakidzlfkr@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "+62 857 8647 0923",
-    href: "http://wa.me/6285786470923",
-  },
-  { icon: MapPin, label: "Batang, Jawa Tengah, Indonesia", href: null },
-];
-
 export default function ContactSection() {
+  const { t } = useLanguage();
+
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: "zakidzlfkr@gmail.com",
+      href: "mailto:zakidzlfkr@gmail.com",
+    },
+    {
+      icon: Phone,
+      label: "+62 857 8647 0923",
+      href: "http://wa.me/6285786470923",
+    },
+    { icon: MapPin, label: t.contact.location, href: null },
+  ];
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -85,8 +88,8 @@ export default function ContactSection() {
       <div className="container-main">
         <SectionHeader
           number="06"
-          title="Kontak"
-          subtitle="Tertarik bekerja sama? Mari berkenalan!"
+          title={t.contact.sectionTitle}
+          subtitle={t.contact.sectionSubtitle}
           align="center"
           className="items-center text-center"
         />
@@ -95,9 +98,7 @@ export default function ContactSection() {
           {/* Left: Info */}
           <div>
             <p className="text-[var(--text-secondary)] font-[var(--font-inter)] leading-relaxed mb-8">
-              Saya selalu terbuka untuk peluang baru — baik itu kolaborasi
-              proyek freelance, diskusi teknologi, atau sekadar ngobrol seputar
-              web development. Jangan ragu untuk menghubungi saya!
+              {t.contact.p1}
             </p>
 
             {/* Contact info */}
@@ -126,7 +127,7 @@ export default function ContactSection() {
             {/* Social links */}
             <div>
               <p className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-widest mb-3">
-                // Temukan saya di
+                {t.contact.findMe}
               </p>
               <div className="flex flex-wrap gap-3">
                 {socialLinks.map(({ label, icon: Icon, href, highlight }) => (
@@ -154,7 +155,7 @@ export default function ContactSection() {
           {/* Right: Form */}
           <NeoCard variant="accent" className="p-8">
             <h3 className="font-[var(--font-space)] font-bold text-xl text-[var(--text-primary)] mb-6">
-              Kirim Pesan 📨
+              {t.contact.sectionTitle} 📨
             </h3>
             <form onSubmit={handleSubmit} className="space-y-5" noValidate>
               <div>
@@ -162,7 +163,7 @@ export default function ContactSection() {
                   htmlFor="name"
                   className="block text-xs font-mono text-[var(--text-muted)] uppercase tracking-widest mb-2"
                 >
-                  Nama *
+                  {t.contact.formName} *
                 </label>
                 <input
                   id="name"
@@ -171,7 +172,7 @@ export default function ContactSection() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Nama lengkap kamu"
+                  placeholder={t.contact.formNamePlaceholder}
                   className={inputBase}
                 />
               </div>
@@ -181,7 +182,7 @@ export default function ContactSection() {
                   htmlFor="email"
                   className="block text-xs font-mono text-[var(--text-muted)] uppercase tracking-widest mb-2"
                 >
-                  Email *
+                  {t.contact.formEmail} *
                 </label>
                 <input
                   id="email"
@@ -190,7 +191,7 @@ export default function ContactSection() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="email@contoh.com"
+                  placeholder={t.contact.formEmailPlaceholder}
                   className={inputBase}
                 />
               </div>
@@ -200,7 +201,7 @@ export default function ContactSection() {
                   htmlFor="message"
                   className="block text-xs font-mono text-[var(--text-muted)] uppercase tracking-widest mb-2"
                 >
-                  Pesan *
+                  {t.contact.formMessage} *
                 </label>
                 <textarea
                   id="message"
@@ -209,7 +210,7 @@ export default function ContactSection() {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Ceritakan kebutuhan atau pertanyaan kamu..."
+                  placeholder={t.contact.formMessagePlaceholder}
                   className={inputBase}
                 />
               </div>
@@ -226,7 +227,7 @@ export default function ContactSection() {
                 ) : (
                   <>
                     <Send size={18} />
-                    Kirim Pesan
+                    {t.contact.sendBtn}
                   </>
                 )}
               </NeoButton>

@@ -1,36 +1,41 @@
+"use client";
+
 import experienceData from "@/data/experience.json";
 import SectionHeader from "@/components/ui/SectionHeader";
 import NeoCard from "@/components/ui/NeoCard";
 import { Briefcase, Users, Heart, MapPin } from "lucide-react";
-
-const typeConfig = {
-  work: {
-    label: "Pekerjaan",
-    icon: Briefcase,
-    variant: "accent",
-    dotColor: "bg-[var(--accent-yellow)]",
-    textColor: "text-[var(--accent-yellow)]",
-    borderColor: "border-[var(--accent-yellow)]",
-  },
-  organization: {
-    label: "Organisasi",
-    icon: Users,
-    variant: "cyan",
-    dotColor: "bg-[var(--accent-cyan)]",
-    textColor: "text-[var(--accent-cyan)]",
-    borderColor: "border-[var(--accent-cyan)]",
-  },
-  volunteer: {
-    label: "Volunteer",
-    icon: Heart,
-    variant: "pink",
-    dotColor: "bg-[var(--accent-pink)]",
-    textColor: "text-[var(--accent-pink)]",
-    borderColor: "border-[var(--accent-pink)]",
-  },
-};
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ExperienceSection() {
+  const { t, language } = useLanguage();
+
+  const typeConfig = {
+    work: {
+      label: t.experience.work,
+      icon: Briefcase,
+      variant: "accent",
+      dotColor: "bg-[var(--accent-yellow)]",
+      textColor: "text-[var(--accent-yellow)]",
+      borderColor: "border-[var(--accent-yellow)]",
+    },
+    organization: {
+      label: t.experience.organization,
+      icon: Users,
+      variant: "cyan",
+      dotColor: "bg-[var(--accent-cyan)]",
+      textColor: "text-[var(--accent-cyan)]",
+      borderColor: "border-[var(--accent-cyan)]",
+    },
+    volunteer: {
+      label: t.experience.volunteer,
+      icon: Heart,
+      variant: "pink",
+      dotColor: "bg-[var(--accent-pink)]",
+      textColor: "text-[var(--accent-pink)]",
+      borderColor: "border-[var(--accent-pink)]",
+    },
+  };
+
   return (
     <section
       id="experience"
@@ -39,8 +44,8 @@ export default function ExperienceSection() {
       <div className="container-main">
         <SectionHeader
           number="04"
-          title="Pengalaman"
-          subtitle="Perjalanan karier, organisasi, dan kegiatan volunteer saya"
+          title={t.experience.sectionTitle}
+          subtitle={t.experience.sectionSubtitle}
         />
 
         {/* Legend */}
@@ -92,7 +97,7 @@ export default function ExperienceSection() {
                         </div>
                         <div>
                           <h3 className="font-[var(--font-space)] font-bold text-[var(--text-primary)] leading-tight">
-                            {entry.title}
+                            {entry.title[language] || entry.title.id}
                           </h3>
                           <p
                             className={`font-semibold text-sm ${config.textColor} mt-0.5`}
@@ -103,7 +108,7 @@ export default function ExperienceSection() {
                       </div>
                       <div className="flex flex-col sm:items-end gap-1 shrink-0">
                         <span className="text-xs font-mono text-[var(--text-muted)] whitespace-nowrap">
-                          {entry.period}
+                          {entry.period[language] || entry.period.id}
                         </span>
                         <span className="inline-flex items-center gap-1 text-xs text-[var(--text-muted)]">
                           <MapPin size={10} />
@@ -114,7 +119,9 @@ export default function ExperienceSection() {
 
                     {/* Description list */}
                     <ul className="space-y-1.5">
-                      {entry.description.map((item, i) => (
+                      {(
+                        entry.description[language] || entry.description.id
+                      ).map((item, i) => (
                         <li
                           key={i}
                           className="text-sm text-[var(--text-secondary)] font-[var(--font-inter)] flex gap-3"

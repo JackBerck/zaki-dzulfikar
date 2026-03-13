@@ -3,21 +3,23 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import NeoButton from "@/components/ui/NeoButton";
-import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { label: "Tentang", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Proyek", href: "#projects" },
-  { label: "Pengalaman", href: "#experience" },
-  { label: "Sertifikat", href: "#certificates" },
-  { label: "Kontak", href: "#contact" },
-];
+import { Menu, X, Globe } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const { language, toggleLanguage, t } = useLanguage();
+
+  const navLinks = [
+    { label: t.nav.about, href: "#about" },
+    { label: t.nav.skills, href: "#skills" },
+    { label: t.nav.projects, href: "#projects" },
+    { label: t.nav.experience, href: "#experience" },
+    { label: t.certificates.sectionTitle, href: "#certificates" },
+    { label: t.nav.contact, href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,7 +59,7 @@ export default function Navbar() {
         }`}
       >
         <div className="container-main section-padding-x">
-          <nav className="flex items-center justify-between h-16 md:h-20">
+          <nav className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <Link
               href="/"
@@ -79,7 +81,7 @@ export default function Navbar() {
             </Link>
 
             {/* Desktop Nav */}
-            <ul className="hidden md:flex items-center gap-1">
+            <ul className="hidden lg:flex items-center gap-1">
               {navLinks.map((link) => {
                 const sectionId = link.href.replace("#", "");
                 const isActive = activeSection === sectionId;
@@ -107,8 +109,16 @@ export default function Navbar() {
               })}
             </ul>
 
-            {/* CTA Button */}
-            <div className="hidden md:block">
+            {/* CTA Button and Language Switcher */}
+            <div className="hidden lg:flex items-center gap-4">
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 px-3 py-1.5 border border-[var(--border-muted)] hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)] transition-colors text-sm font-mono text-[var(--text-secondary)] rounded-none"
+                title="Swith Language"
+              >
+                <Globe size={16} />
+                <span>{language.toUpperCase()}</span>
+              </button>
               <NeoButton
                 variant="ghost"
                 size="sm"
@@ -119,25 +129,36 @@ export default function Navbar() {
               </NeoButton>
             </div>
 
-            {/* Mobile menu toggle */}
-            <button
-              className="md:hidden p-2 text-[var(--text-primary)] border border-[var(--border-muted)] hover:border-[var(--border-color)] transition-colors"
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label="Toggle menu"
-            >
-              {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
+            {/* Mobile menu toggle & Language */}
+            <div className="flex lg:hidden items-center gap-3">
+              <button
+                onClick={toggleLanguage}
+                className="p-2 text-[var(--text-secondary)] border border-[var(--border-muted)] hover:text-[var(--accent-cyan)] hover:border-[var(--accent-cyan)] transition-colors"
+                aria-label="Toggle language"
+              >
+                <span className="text-xs font-mono font-bold leading-none block">
+                  {language.toUpperCase()}
+                </span>
+              </button>
+              <button
+                className="p-2 text-[var(--text-primary)] border border-[var(--border-muted)] hover:border-[var(--border-color)] transition-colors"
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label="Toggle menu"
+              >
+                {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+              </button>
+            </div>
           </nav>
         </div>
       </header>
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-40 bg-[#0a0a0a]/98 md:hidden flex flex-col transition-all duration-300 ${
+        className={`fixed inset-0 z-40 bg-[#0a0a0a]/98 lg:hidden flex flex-col transition-all duration-300 ${
           mobileOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <div className="h-16 md:h-20" /> {/* Spacer */}
+        <div className="h-16 lg:h-20" /> {/* Spacer */}
         <div className="flex-1 flex flex-col items-center justify-center gap-2 p-8">
           {navLinks.map((link, i) => (
             <button

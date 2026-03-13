@@ -1,31 +1,13 @@
+"use client";
+
 import SectionHeader from "@/components/ui/SectionHeader";
 import NeoCard from "@/components/ui/NeoCard";
 import { GraduationCap, MapPin, Calendar, Heart } from "lucide-react";
-
-const courses = [
-  "Algoritma Pemrograman",
-  "Struktur Data",
-  "Matematika Diskrit",
-  "Basis Data",
-  "Pemrograman Web",
-  "Rekayasa Perangkat Lunak",
-  "Data Mining",
-  "Kecerdasan Buatan",
-  "Sistem Informasi",
-  "Analisis & Perancangan Sistem",
-];
-
-const interests = [
-  { label: "Fullstack Dev", icon: "⚡" },
-  { label: "UI/UX Design", icon: "🎨" },
-  { label: "Open Source", icon: "🐙" },
-  { label: "Copywriting", icon: "✍️" },
-  { label: "Mekanik", icon: "🔧" },
-  { label: "Musik", icon: "🎸" },
-  { label: "Mendaki", icon: "⛰️" },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function AboutSection() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="about"
@@ -37,39 +19,29 @@ export default function AboutSection() {
           <div>
             <SectionHeader
               number="01"
-              title="Tentang Saya"
-              subtitle="Siapa saya dan apa yang saya lakukan"
+              title={t.about.sectionTitle}
+              subtitle={t.about.sectionSubtitle}
             />
 
             <div className="mt-8 space-y-5 text-[var(--text-secondary)] font-[var(--font-inter)] leading-relaxed">
               <p>
-                Halo! Saya{" "}
+                {t.about.intro}{" "}
                 <span className="text-[var(--text-primary)] font-semibold">
                   Muhammad Zaki Dzulfikar
                 </span>{" "}
-                — mahasiswa Informatika di{" "}
+                — {t.about.role} di{" "}
                 <span className="text-[var(--accent-yellow)] font-semibold">
                   Universitas Jenderal Soedirman
                 </span>{" "}
-                angkatan 2023 yang memiliki passion besar di bidang Fullstack
-                Web Development.
+                {t.about.middle}
               </p>
+              <p>{t.about.p2_1}</p>
               <p>
-                Sebagai Web Developer independen, saya membangun website
-                responsif dan interaktif menggunakan teknologi modern. Saya
-                percaya bahwa kode yang baik bukan hanya yang bekerja dengan
-                benar, tapi juga yang mudah dipelihara, scalable, dan memberikan
-                pengalaman terbaik bagi pengguna.
-              </p>
-              <p>
-                Di luar coding, saya aktif berorganisasi dan mengeksplorasi hobi
-                lainnya, seperti mekanik, bermusik, dan mendaki gunung. Saya
-                selalu bersemangat untuk belajar hal baru dan{" "}
+                {t.about.p3_1}{" "}
                 <span className="text-[var(--accent-cyan)] font-semibold">
-                  berkolaborasi
+                  {t.about.p3_2}
                 </span>{" "}
-                dalam proyek yang menantang. Mari terhubung dan ciptakan sesuatu
-                yang luar biasa bersama!
+                {t.about.p3_3}
               </p>
             </div>
 
@@ -78,17 +50,17 @@ export default function AboutSection() {
               {[
                 {
                   icon: MapPin,
-                  label: "Batang, Jawa Tengah",
+                  label: t.about.location,
                   color: "text-[var(--accent-pink)]",
                 },
                 {
                   icon: Calendar,
-                  label: "2 Agustus 2003",
+                  label: t.about.date,
                   color: "text-[var(--accent-cyan)]",
                 },
                 {
                   icon: GraduationCap,
-                  label: "Informatika, Universitas Jenderal Soedirman",
+                  label: t.about.degree,
                   color: "text-[var(--accent-yellow)]",
                 },
               ].map(({ icon: Icon, label, color }) => (
@@ -104,11 +76,11 @@ export default function AboutSection() {
             {/* Interests */}
             <div className="mt-8">
               <p className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-widest mb-3 flex items-center gap-2">
-                <Heart size={12} className="text-[var(--accent-pink)]" /> Minat
-                &amp; Hobi
+                <Heart size={12} className="text-[var(--accent-pink)]" />{" "}
+                {t.about.interests}
               </p>
               <div className="flex flex-wrap gap-2">
-                {interests.map((item) => (
+                {t.about.interestList.map((item) => (
                   <span
                     key={item.label}
                     className="inline-flex items-center gap-1.5 px-3 py-1 border border-[var(--border-muted)] text-[var(--text-secondary)] text-sm hover:border-[var(--accent-yellow)] hover:text-[var(--accent-yellow)] transition-colors cursor-default"
@@ -162,15 +134,15 @@ export default function AboutSection() {
                     Universitas Jenderal Soedirman
                   </h3>
                   <p className="text-[var(--text-secondary)] text-sm">
-                    S1 Informatika · Juli 2023 – Sekarang
+                    {t.about.eduDegree} · {t.about.eduDate}
                   </p>
                 </div>
               </div>
               <p className="text-xs text-[var(--text-muted)] font-mono mb-3">
-                Mata kuliah relevan:
+                {t.about.courses}
               </p>
               <div className="flex flex-wrap gap-1.5">
-                {courses.slice(0, 7).map((course) => (
+                {t.about.courseList.slice(0, 7).map((course) => (
                   <span
                     key={course}
                     className="text-xs px-2 py-0.5 bg-[var(--bg-secondary)] border border-[var(--border-muted)] text-[var(--text-secondary)]"
@@ -179,7 +151,7 @@ export default function AboutSection() {
                   </span>
                 ))}
                 <span className="text-xs px-2 py-0.5 bg-[var(--bg-secondary)] border border-[var(--border-muted)] text-[var(--text-muted)]">
-                  +{courses.length - 7} lagi...
+                  +{t.about.courseList.length - 7} {t.about.more}
                 </span>
               </div>
             </NeoCard>

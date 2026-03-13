@@ -1,30 +1,35 @@
+"use client";
+
 import certificatesData from "@/data/certificates.json";
 import SectionHeader from "@/components/ui/SectionHeader";
 import NeoCard from "@/components/ui/NeoCard";
 import { Award, Calendar, ExternalLink } from "lucide-react";
-
-const colorMap = {
-  yellow: {
-    variant: "accent",
-    bg: "bg-[var(--accent-yellow)]/10",
-    text: "text-[var(--accent-yellow)]",
-    border: "border-[var(--accent-yellow)]",
-  },
-  cyan: {
-    variant: "cyan",
-    bg: "bg-[var(--accent-cyan)]/10",
-    text: "text-[var(--accent-cyan)]",
-    border: "border-[var(--accent-cyan)]",
-  },
-  pink: {
-    variant: "pink",
-    bg: "bg-[var(--accent-pink)]/10",
-    text: "text-[var(--accent-pink)]",
-    border: "border-[var(--accent-pink)]",
-  },
-};
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function CertificatesSection() {
+  const { t, language } = useLanguage();
+
+  const colorMap = {
+    yellow: {
+      variant: "accent",
+      bg: "bg-[var(--accent-yellow)]/10",
+      text: "text-[var(--accent-yellow)]",
+      border: "border-[var(--accent-yellow)]",
+    },
+    cyan: {
+      variant: "cyan",
+      bg: "bg-[var(--accent-cyan)]/10",
+      text: "text-[var(--accent-cyan)]",
+      border: "border-[var(--accent-cyan)]",
+    },
+    pink: {
+      variant: "pink",
+      bg: "bg-[var(--accent-pink)]/10",
+      text: "text-[var(--accent-pink)]",
+      border: "border-[var(--accent-pink)]",
+    },
+  };
+
   return (
     <section
       id="certificates"
@@ -33,8 +38,8 @@ export default function CertificatesSection() {
       <div className="container-main">
         <SectionHeader
           number="05"
-          title="Sertifikasi"
-          subtitle="Sertifikasi dan pencapaian profesional yang telah saya raih"
+          title={t.certificates.sectionTitle}
+          subtitle={t.certificates.sectionSubtitle}
         />
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -58,7 +63,7 @@ export default function CertificatesSection() {
                 {/* Content */}
                 <div className="flex-1">
                   <h3 className="font-[var(--font-space)] font-bold text-[var(--text-primary)] text-base leading-tight mb-2">
-                    {cert.title}
+                    {cert.title[language] || cert.title.id}
                   </h3>
 
                   <div className="flex items-center gap-1.5 mb-1">
@@ -71,7 +76,7 @@ export default function CertificatesSection() {
                   <div className="flex items-center gap-1.5">
                     <Calendar size={13} className="text-[var(--text-muted)]" />
                     <span className="text-sm text-[var(--text-muted)] font-mono">
-                      {cert.date}
+                      {cert.date[language] || cert.date.id}
                     </span>
                   </div>
                 </div>
@@ -85,7 +90,7 @@ export default function CertificatesSection() {
                     className={`mt-4 inline-flex items-center gap-1.5 text-xs font-mono ${colors.text} hover:underline`}
                   >
                     <ExternalLink size={12} />
-                    Verifikasi Sertifikat
+                    {t.certificates.viewCredential}
                   </a>
                 )}
               </NeoCard>
@@ -101,7 +106,7 @@ export default function CertificatesSection() {
               {certificatesData.length}
             </p>
             <p className="text-[var(--text-muted)] text-xs font-mono uppercase tracking-widest mt-1">
-              Sertifikasi Diraih
+              {t.certificates.sectionTitle}
             </p>
           </div>
           <div className="flex-1 h-px bg-[var(--border-muted)]" />

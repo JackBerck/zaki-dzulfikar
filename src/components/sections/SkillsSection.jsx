@@ -1,9 +1,14 @@
+"use client";
+
 import skillsData from "@/data/skills.json";
 import SectionHeader from "@/components/ui/SectionHeader";
 import NeoCard from "@/components/ui/NeoCard";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function SkillsSection() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="skills"
@@ -12,8 +17,8 @@ export default function SkillsSection() {
       <div className="container-main">
         <SectionHeader
           number="02"
-          title="Skills & Tech Stack"
-          subtitle="Teknologi dan tools yang saya gunakan sehari-hari"
+          title={t.skills.sectionTitle}
+          subtitle={t.skills.sectionSubtitle}
         />
 
         <div className="mt-12 grid md:grid-cols-3 gap-6">

@@ -3,8 +3,14 @@
     "id": "ziggs",
     "title": "Ziggs",
     "shortTitle": "Ziggs",
-    "description": "Platform tiket event modern yang dirancang untuk mempermudah manajemen event, mendukung penjualan tiket online dan offline dengan validasi QR code yang aman. Sistem mengimplementasikan arsitektur Action-Service yang skalabel untuk mendukung penjualan multi-channel, pelacakan afiliasi dengan logika komisi, analitik real-time, dan Role-Based Access Control (RBAC) yang kompleks.",
-    "period": "Oktober 2025 – Februari 2026",
+    "description": {
+      "id": "Platform tiket event modern yang dirancang untuk mempermudah manajemen event, mendukung penjualan tiket online dan offline dengan validasi QR code yang aman. Sistem mengimplementasikan arsitektur Action-Service yang skalabel untuk mendukung penjualan multi-channel, pelacakan afiliasi dengan logika komisi, analitik real-time, dan Role-Based Access Control (RBAC) yang kompleks.",
+      "en": "A modern event ticketing platform designed to simplify event management, supporting online and offline ticket sales with secure QR code validation. The system implements a scalable Action-Service architecture to support multi-channel sales, affiliate tracking with commission logic, real-time analytics, and complex Role-Based Access Control (RBAC)."
+    },
+    "period": {
+      "id": "Oktober 2025 – Februari 2026",
+      "en": "October 2025 – February 2026"
+    },
     "tags": [
       "Laravel 12",
       "React 19",
@@ -25,8 +31,14 @@
     "id": "soedirman-student-summit-2025",
     "title": "Soedirman Student Summit 2025",
     "shortTitle": "SSS 2025",
-    "description": "Platform yang menyediakan informasi penting bagi mahasiswa baru Universitas Jenderal Soedirman (Unsoed) 2025 untuk mempersiapkan diri memasuki perguruan tinggi. Website bertujuan mendukung pengembangan mahasiswa dan membangun jaringan antar mahasiswa dari berbagai latar belakang.",
-    "period": "April 2025 – Agustus 2025",
+    "description": {
+      "id": "Platform yang menyediakan informasi penting bagi mahasiswa baru Universitas Jenderal Soedirman (Unsoed) 2025 untuk mempersiapkan diri memasuki perguruan tinggi. Website bertujuan mendukung pengembangan mahasiswa dan membangun jaringan antar mahasiswa dari berbagai latar belakang.",
+      "en": "A platform that provides important information for new students of Jenderal Soedirman University (Unsoed) 2025 to prepare themselves to enter college. The website aims to support student development and build networks among students from various backgrounds."
+    },
+    "period": {
+      "id": "April 2025 – Agustus 2025",
+      "en": "April 2025 – August 2025"
+    },
     "tags": ["Svelte", "Tailwind CSS"],
     "category": "frontend",
     "image": "/img/projects/soedirman-student-summit-25.png",
@@ -39,8 +51,14 @@
     "id": "peduli-rasa",
     "title": "PeduliRasa",
     "shortTitle": "PeduliRasa",
-    "description": "Aplikasi berbasis web yang dirancang untuk menghubungkan pemilik makanan berlebih dengan mereka yang membutuhkan, mengatasi masalah kelaparan dan pemborosan makanan di Indonesia. Platform ini menawarkan akses mudah untuk mencari dan mendistribusikan surplus makanan di berbagai perangkat.",
-    "period": "Oktober 2024 – November 2024",
+    "description": {
+      "id": "Aplikasi berbasis web yang dirancang untuk menghubungkan pemilik makanan berlebih dengan mereka yang membutuhkan, mengatasi masalah kelaparan dan pemborosan makanan di Indonesia. Platform ini menawarkan akses mudah untuk mencari dan mendistribusikan surplus makanan di berbagai perangkat.",
+      "en": "A web-based application designed to connect surplus food owners with those in need, addressing the problems of hunger and food waste in Indonesia. The platform offers easy access to find and distribute surplus food across various devices."
+    },
+    "period": {
+      "id": "Oktober 2024 – November 2024",
+      "en": "October 2024 – November 2024"
+    },
     "tags": ["JavaScript", "PHP", "Tailwind CSS"],
     "category": "fullstack",
     "image": null,
@@ -53,8 +71,14 @@
     "id": "soedirman-student-summit-2024",
     "title": "Soedirman Student Summit 2024",
     "shortTitle": "SSS 2024",
-    "description": "Platform informasi untuk mahasiswa baru Universitas Jenderal Soedirman 2024. Dikembangkan menggunakan Astro.js dan Tailwind CSS untuk performa tinggi dan waktu muat yang sangat cepat.",
-    "period": "April 2024 – Agustus 2024",
+    "description": {
+      "id": "Platform informasi untuk mahasiswa baru Universitas Jenderal Soedirman 2024. Dikembangkan menggunakan Astro.js dan Tailwind CSS untuk performa tinggi dan waktu muat yang sangat cepat.",
+      "en": "Information platform for new students of Jenderal Soedirman University 2024. Developed using Astro.js and Tailwind CSS for high performance and blazing fast load times."
+    },
+    "period": {
+      "id": "April 2024 – Agustus 2024",
+      "en": "April 2024 – August 2024"
+    },
     "tags": ["Astro.js", "Tailwind CSS"],
     "category": "frontend",
     "image": null,
@@ -67,8 +91,14 @@
     "id": "code-documentation",
     "title": "Code Documentation",
     "shortTitle": "CodeDocs",
-    "description": "Repository GitHub yang menjelaskan berbagai topik pemrograman dan praktik terbaik. Bertujuan untuk memudahkan orang belajar bahasa pemrograman melalui dokumentasi yang terstruktur dan mudah dipahami.",
-    "period": "Maret 2024 – Sekarang",
+    "description": {
+      "id": "Repository GitHub yang menjelaskan berbagai topik pemrograman dan praktik terbaik. Bertujuan untuk memudahkan orang belajar bahasa pemrograman melalui dokumentasi yang terstruktur dan mudah dipahami.",
+      "en": "A GitHub repository that explains various programming topics and best practices. Aimed to make it easier for people to learn programming languages through structured and logical documentation."
+    },
+    "period": {
+      "id": "Maret 2024 – Sekarang",
+      "en": "March 2024 – Present"
+    },
     "tags": ["HTML", "CSS", "C++", "JavaScript", "PHP"],
     "category": "documentation",
     "image": "/img/projects/code-documentation.png",

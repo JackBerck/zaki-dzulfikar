@@ -1,5 +1,6 @@
 import { Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
+import Providers from "@/components/Providers";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -72,7 +73,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased font-[var(--font-inter)] bg-[#0a0a0a] text-[#f0f0f0]">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

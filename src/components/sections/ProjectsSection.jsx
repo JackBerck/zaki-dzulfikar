@@ -14,9 +14,11 @@ import {
   ChevronUp,
 } from "lucide-react";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ProjectsSection() {
   const [showAllProjects, setShowAllProjects] = useState(false);
+  const { t, language } = useLanguage();
 
   const featured = projectsData.filter((p) => p.featured);
   const others = projectsData.filter((p) => !p.featured);
@@ -37,8 +39,8 @@ export default function ProjectsSection() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <SectionHeader
             number="03"
-            title="Featured Projects"
-            subtitle="Proyek-proyek unggulan yang pernah saya kerjakan"
+            title={t.projects.sectionTitle}
+            subtitle={t.projects.sectionSubtitle}
           />
         </div>
 
@@ -82,12 +84,12 @@ export default function ProjectsSection() {
                     {project.title}
                   </h3>
                   <p className="text-xs font-mono text-[var(--text-muted)] mb-3">
-                    {project.period}
+                    {project.period[language] || project.period.id}
                   </p>
 
                   {/* Description */}
                   <p className="text-[var(--text-secondary)] text-sm leading-relaxed font-[var(--font-inter)] line-clamp-4 flex-1 mb-5">
-                    {project.description}
+                    {project.description[language] || project.description.id}
                   </p>
 
                   {/* Tags */}
@@ -120,7 +122,7 @@ export default function ProjectsSection() {
                         size="sm"
                       >
                         <ExternalLink size={14} />
-                        Live Demo
+                        {t.projects.liveDemo}
                       </NeoButton>
                     )}
                     {project.repoUrl && (
@@ -132,7 +134,7 @@ export default function ProjectsSection() {
                         size="sm"
                       >
                         <Link2 size={14} />
-                        Lihat Project
+                        {t.projects.viewProject}
                       </NeoButton>
                     )}
                   </div>
@@ -146,7 +148,7 @@ export default function ProjectsSection() {
         {others.length > 0 && (
           <div>
             <p className="text-xs font-mono text-[var(--text-muted)] uppercase tracking-widest mb-4">
-              // Proyek Lainnya
+              {t.projects.otherProjects}
             </p>
 
             {showAllProjects ? (
@@ -178,7 +180,7 @@ export default function ProjectsSection() {
                         </div>
                       </div>
                       <p className="text-xs font-mono text-[var(--text-muted)] mt-0.5 mb-2">
-                        {project.period}
+                        {project.period[language] || project.period.id}
                       </p>
                       <div className="flex flex-wrap gap-1">
                         {project.tags.slice(0, 3).map((tag) => (
@@ -206,12 +208,12 @@ export default function ProjectsSection() {
                 {showAllProjects ? (
                   <>
                     <ChevronUp size={18} />
-                    Sembunyikan Proyek Lainnya
+                    {t.projects.showLess}
                   </>
                 ) : (
                   <>
                     <ChevronDown size={18} />
-                    Lihat Proyek Lainnya ({others.length})
+                    {t.projects.showMore} ({others.length})
                   </>
                 )}
               </NeoButton>

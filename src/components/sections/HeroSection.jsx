@@ -2,10 +2,13 @@
 
 import NeoButton from "@/components/ui/NeoButton";
 import { Download, Mail, ArrowDown } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const roles = ["Fullstack Web Developer", "UI/UX Designer", "Copywriter"];
 
 export default function HeroSection() {
+  const { t } = useLanguage();
+
   const scrollToContact = () => {
     const el = document.getElementById("contact");
     if (el) el.scrollIntoView({ behavior: "smooth" });
@@ -41,7 +44,7 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-[var(--accent-green)] bg-[var(--bg-card)] mb-6 animate-fade-in-up">
             <span className="w-2 h-2 rounded-full bg-[var(--accent-green)] animate-pulse" />
             <span className="text-[var(--accent-green)] text-xs font-mono font-semibold tracking-widest uppercase">
-              Available for Work
+              {t.hero.status}
             </span>
           </div>
 
@@ -90,12 +93,11 @@ export default function HeroSection() {
             className="text-[var(--text-secondary)] text-lg md:text-xl max-w-2xl leading-relaxed mb-10 animate-fade-in-up font-[var(--font-inter)]"
             style={{ animationDelay: "0.3s" }}
           >
-            Mahasiswa Informatika{" "}
+            {t.hero.desc1}{" "}
             <span className="text-[var(--text-primary)] font-semibold">
-              Universitas Jenderal Soedirman
+              {t.hero.desc2}
             </span>{" "}
-            yang passionate membangun produk digital yang berdampak — dari
-            arsitektur backend yang solid hingga UI yang memukau.
+            {t.hero.desc3}
           </p>
 
           {/* CTA Buttons */}
@@ -111,11 +113,18 @@ export default function HeroSection() {
               rel="noopener noreferrer"
             >
               <Download size={18} />
-              Download CV
+              {t.hero.dlCV}
             </NeoButton>
-            <NeoButton variant="outline" size="lg" onClick={scrollToContact} href="https://wa.me/6285786470923" target="_blank" rel="noopener noreferrer">
+            <NeoButton
+              variant="outline"
+              size="lg"
+              onClick={scrollToContact}
+              href="https://wa.me/6285786470923"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Mail size={18} />
-              Hubungi Saya
+              {t.hero.contact}
             </NeoButton>
           </div>
 
@@ -125,9 +134,9 @@ export default function HeroSection() {
             style={{ animationDelay: "0.5s" }}
           >
             {[
-              { value: "5+", label: "Proyek Selesai" },
-              { value: "2+", label: "Tahun Coding" },
-              { value: "3+", label: "Teknologi Utama" },
+              { value: "5+", label: t.hero.stats[0].label },
+              { value: "2+", label: t.hero.stats[1].label },
+              { value: "3+", label: t.hero.stats[2].label },
             ].map((stat) => (
               <div key={stat.label}>
                 <p className="font-[var(--font-space)] text-3xl font-bold text-[var(--accent-yellow)]">

@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   Github,
@@ -8,6 +10,7 @@ import {
   Send,
   Facebook,
 } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
 
 const socialLinks = [
   {
@@ -56,6 +59,7 @@ const socialLinks = [
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="border-t-2 border-[var(--border-muted)] bg-[var(--bg-secondary)] mt-0">
@@ -98,7 +102,9 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="mt-8 pt-6 border-t border-[var(--border-muted)] flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[var(--text-muted)] font-[var(--font-inter)]">
-          <p>© {currentYear} Muhammad Zaki Dzulfikar. All rights reserved.</p>
+          <p>
+            © {currentYear} Muhammad Zaki Dzulfikar. {t.footer.rights}
+          </p>
         </div>
       </div>
     </footer>
