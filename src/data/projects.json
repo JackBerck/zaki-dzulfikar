@@ -15,7 +15,6 @@
       "Laravel 12",
       "React 19",
       "TypeScript",
-      "Inertia.js",
       "PostgreSQL",
       "Redis",
       "Tailwind CSS"
@@ -99,12 +98,78 @@
       "id": "Maret 2024 – Sekarang",
       "en": "March 2024 – Present"
     },
-    "tags": ["HTML", "CSS", "C++", "JavaScript", "PHP"],
+    "tags": [
+      "HTML",
+      "CSS",
+      "C++",
+      "JavaScript",
+      "PHP",
+      "Go",
+      "Laravel",
+      "React",
+      "Svelte"
+    ],
     "category": "documentation",
     "image": "/img/projects/code-documentation.png",
     "liveUrl": null,
     "repoUrl": "https://github.com/JackBerck/code-documentation",
     "featured": true,
     "emoji": "📚"
+  },
+  {
+    "id": "landing-page-lab-sipil-unsoed",
+    "title": "Landing Page Laboratorium Teknik Sipil Unsoed",
+    "shortTitle": "Landing Page Lab Sipil Unsoed",
+    "description": {
+      "id": "Sebuah landing page yang dirancang untuk Laboratorium Teknik Sipil Universitas Jenderal Soedirman. Website ini bertujuan untuk memberikan informasi tentang laboratorium, fasilitas, dan kegiatan yang dilakukan, serta memudahkan komunikasi antara mahasiswa dan staf laboratorium.",
+      "en": "A landing page designed for the Civil Engineering Laboratory of Jenderal Soedirman University. This website aims to provide information about the laboratory, facilities, and activities conducted, as well as facilitate communication between students and laboratory staff."
+    },
+    "period": {
+      "id": "Maret 2025 – October 2025",
+      "en": "March 2025 – October 2025"
+    },
+    "tags": [
+      "JavaScript",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel 12",
+      "React 19",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "category": "fullstack",
+    "image": "/img/projects/landing-page-lab-sipil.png",
+    "liveUrl": "https://labsipilunsoed.com/",
+    "repoUrl": null,
+    "featured": true,
+    "emoji": "🧱"
+  },
+  {
+    "id": "reservasi-lab-sipil-unsoed",
+    "title": "Reservasi Laboratorium Teknik Sipil Unsoed",
+    "shortTitle": "Reservasi Lab Sipil Unsoed",
+    "description": {
+      "id": "Sebuah sistem reservasi online untuk Laboratorium Teknik Sipil Universitas Jenderal Soedirman. Sistem ini memungkinkan mahasiswa untuk memesan fasilitas laboratorium dengan mudah, serta memberikan kemudahan bagi staf laboratorium dalam mengelola jadwal dan pemesanan.",
+      "en": "An online reservation system for the Civil Engineering Laboratory of Jenderal Soedirman University. This system allows students to easily book laboratory facilities, and provides convenience for laboratory staff in managing schedules and reservations."
+    },
+    "period": {
+      "id": "Maret 2025 – October 2025",
+      "en": "March 2025 – October 2025"
+    },
+    "tags": [
+      "JavaScript",
+      "PHP",
+      "Tailwind CSS",
+      "Laravel 12",
+      "React 19",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "category": "fullstack",
+    "image": "/img/projects/reservasi-lab-sipil.png",
+    "liveUrl": "https://reservasi.labsipilunsoed.com/",
+    "repoUrl": null,
+    "featured": true,
+    "emoji": "📅"
   }
 ]
