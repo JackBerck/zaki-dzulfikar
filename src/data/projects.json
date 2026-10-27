@@ -5,7 +5,7 @@
     "shortTitle": "Ziggs",
     "description": {
       "id": "Platform tiket event modern yang dirancang untuk mempermudah manajemen event, mendukung penjualan tiket online dan offline dengan validasi QR code yang aman. Sistem mengimplementasikan arsitektur Action-Service yang skalabel untuk mendukung penjualan multi-channel, pelacakan afiliasi dengan logika komisi, analitik real-time, dan Role-Based Access Control (RBAC) yang kompleks.",
-      "en": "A modern event ticketing platform designed to simplify event management, supporting online and offline ticket sales with secure QR code validation. The system implements a scalable Action-Service architecture to support multi-channel sales, affiliate tracking with commission logic, real-time analytics, and complex Role-Based Access Control (RBAC)."
+      "en": "A modern event ticketing platform designed to streamline event management, enabling seamless online and offline ticket sales with secure QR code validation. The system implements a scalable Action-Service architecture to support multi-channel sales, affiliate tracking with commission logic, real-time analytics, and complex Role-Based Access Control (RBAC)."
     },
     "period": {
       "id": "Oktober 2025 – Februari 2026",
@@ -15,6 +15,7 @@
       "Laravel 12",
       "React 19",
       "TypeScript",
+      "Inertia.js",
       "PostgreSQL",
       "Redis",
       "Tailwind CSS"
@@ -27,18 +28,72 @@
     "emoji": "🎟️"
   },
   {
+    "id": "landing-page-lab-sipil-unsoed",
+    "title": "Landing Page Laboratorium Teknik Sipil",
+    "shortTitle": "Landing Page Lab Sipil",
+    "description": {
+      "id": "Mengembangkan landing page profesional dan informatif untuk Laboratorium Teknik Sipil guna menampilkan fasilitas, riset, dan layanan mereka. Platform ini menyediakan informasi esensial bagi mahasiswa dan mitra eksternal, berfungsi sebagai etalase digital aktivitas dan kapabilitas lab.",
+      "en": "Developed a professional and informative landing page for the Civil Engineering Laboratory to showcase their facilities, research, and services. The platform provides essential information for students and external partners, serving as a digital front for the lab's activities and capabilities."
+    },
+    "period": {
+      "id": "Maret 2025 – Oktober 2025",
+      "en": "March 2025 – October 2025"
+    },
+    "tags": [
+      "Laravel 12",
+      "React 19",
+      "TypeScript",
+      "Inertia.js",
+      "MySQL",
+      "Tailwind CSS"
+    ],
+    "category": "fullstack",
+    "image": "/img/projects/landing-page-lab-sipil.png",
+    "liveUrl": "https://labsipilunsoed.com/",
+    "repoUrl": null,
+    "featured": true,
+    "emoji": "🧱"
+  },
+  {
+    "id": "reservasi-lab-sipil-unsoed",
+    "title": "Reservasi Laboratorium Teknik Sipil",
+    "shortTitle": "Reservasi Lab Sipil",
+    "description": {
+      "id": "Merancang dan mengimplementasikan sistem reservasi berbasis web untuk Laboratorium Teknik Sipil, memungkinkan mahasiswa dan pengguna eksternal memeriksa ketersediaan, memesan peralatan atau fasilitas lab, dan mengelola reservasi secara daring secara real-time.",
+      "en": "Designed and implemented a web-based reservation system for the Civil Engineering Laboratory, allowing students and external users to check availability, book laboratory equipment or facilities, and manage their reservations online with real-time confirmation."
+    },
+    "period": {
+      "id": "Maret 2025 – Oktober 2025",
+      "en": "March 2025 – October 2025"
+    },
+    "tags": [
+      "Laravel 12",
+      "React 19",
+      "TypeScript",
+      "Inertia.js",
+      "MySQL",
+      "Tailwind CSS"
+    ],
+    "category": "fullstack",
+    "image": "/img/projects/reservasi-lab-sipil.png",
+    "liveUrl": "https://reservasi.labsipilunsoed.com/",
+    "repoUrl": null,
+    "featured": true,
+    "emoji": "📅"
+  },
+  {
     "id": "soedirman-student-summit-2025",
     "title": "Soedirman Student Summit 2025",
     "shortTitle": "SSS 2025",
     "description": {
       "id": "Platform yang menyediakan informasi penting bagi mahasiswa baru Universitas Jenderal Soedirman (Unsoed) 2025 untuk mempersiapkan diri memasuki perguruan tinggi. Website bertujuan mendukung pengembangan mahasiswa dan membangun jaringan antar mahasiswa dari berbagai latar belakang.",
-      "en": "A platform that provides important information for new students of Jenderal Soedirman University (Unsoed) 2025 to prepare themselves to enter college. The website aims to support student development and build networks among students from various backgrounds."
+      "en": "A platform that provides essential information for new students of Universitas Jenderal Soedirman (Unsoed) 2025 to prepare for their entry into higher education. The website aims to support student development and knowledge, as well as build networks among students from various backgrounds and disciplines."
     },
     "period": {
       "id": "April 2025 – Agustus 2025",
       "en": "April 2025 – August 2025"
     },
-    "tags": ["Svelte", "Tailwind CSS"],
+    "tags": ["Tailwind CSS", "Svelte"],
     "category": "frontend",
     "image": "/img/projects/soedirman-student-summit-25.png",
     "liveUrl": null,
@@ -51,8 +106,8 @@
     "title": "PeduliRasa",
     "shortTitle": "PeduliRasa",
     "description": {
-      "id": "Aplikasi berbasis web yang dirancang untuk menghubungkan pemilik makanan berlebih dengan mereka yang membutuhkan, mengatasi masalah kelaparan dan pemborosan makanan di Indonesia. Platform ini menawarkan akses mudah untuk mencari dan mendistribusikan surplus makanan di berbagai perangkat.",
-      "en": "A web-based application designed to connect surplus food owners with those in need, addressing the problems of hunger and food waste in Indonesia. The platform offers easy access to find and distribute surplus food across various devices."
+      "id": "Aplikasi berbasis web yang dirancang untuk menghubungkan pemilik makanan berlebih dengan mereka yang membutuhkan, mengatasi masalah kelaparan dan pemborosan makanan di Indonesia. Platform ini menawarkan akses mudah untuk mencari dan mendistribusikan surplus makanan di berbagai perangkat tanpa instalasi tambahan.",
+      "en": "A web-based application designed to connect surplus food owners with those in need, addressing hunger and food waste issues in Indonesia. The platform offers easy access for users to search and distribute surplus food across various devices without the need for additional installations."
     },
     "period": {
       "id": "Oktober 2024 – November 2024",
@@ -71,14 +126,14 @@
     "title": "Soedirman Student Summit 2024",
     "shortTitle": "SSS 2024",
     "description": {
-      "id": "Platform informasi untuk mahasiswa baru Universitas Jenderal Soedirman 2024. Dikembangkan menggunakan Astro.js dan Tailwind CSS untuk performa tinggi dan waktu muat yang sangat cepat.",
-      "en": "Information platform for new students of Jenderal Soedirman University 2024. Developed using Astro.js and Tailwind CSS for high performance and blazing fast load times."
+      "id": "Platform informasi resmi untuk mahasiswa baru Universitas Jenderal Soedirman 2024 guna mempersiapkan diri memasuki perkuliahan. Bertujuan mendukung pengembangan mahasiswa dan membangun jejaring lintas disiplin ilmu.",
+      "en": "A platform that provides essential information for new students of Universitas Jenderal Soedirman (Unsoed) 2024 to prepare for their entry into higher education. The website aims to support student development and knowledge, as well as build networks among students from various backgrounds and disciplines."
     },
     "period": {
       "id": "April 2024 – Agustus 2024",
       "en": "April 2024 – August 2024"
     },
-    "tags": ["Astro.js", "Tailwind CSS"],
+    "tags": ["Tailwind CSS", "Astro.js"],
     "category": "frontend",
     "image": null,
     "liveUrl": null,
@@ -103,11 +158,7 @@
       "CSS",
       "C++",
       "JavaScript",
-      "PHP",
-      "Go",
-      "Laravel",
-      "React",
-      "Svelte"
+      "PHP"
     ],
     "category": "documentation",
     "image": "/img/projects/code-documentation.png",
@@ -115,61 +166,5 @@
     "repoUrl": "https://github.com/JackBerck/code-documentation",
     "featured": true,
     "emoji": "📚"
-  },
-  {
-    "id": "landing-page-lab-sipil-unsoed",
-    "title": "Landing Page Laboratorium Teknik Sipil Unsoed",
-    "shortTitle": "Landing Page Lab Sipil Unsoed",
-    "description": {
-      "id": "Sebuah landing page yang dirancang untuk Laboratorium Teknik Sipil Universitas Jenderal Soedirman. Website ini bertujuan untuk memberikan informasi tentang laboratorium, fasilitas, dan kegiatan yang dilakukan, serta memudahkan komunikasi antara mahasiswa dan staf laboratorium.",
-      "en": "A landing page designed for the Civil Engineering Laboratory of Jenderal Soedirman University. This website aims to provide information about the laboratory, facilities, and activities conducted, as well as facilitate communication between students and laboratory staff."
-    },
-    "period": {
-      "id": "Maret 2025 – October 2025",
-      "en": "March 2025 – October 2025"
-    },
-    "tags": [
-      "JavaScript",
-      "PHP",
-      "Tailwind CSS",
-      "Laravel 12",
-      "React 19",
-      "TypeScript",
-      "PostgreSQL"
-    ],
-    "category": "fullstack",
-    "image": "/img/projects/landing-page-lab-sipil.png",
-    "liveUrl": "https://labsipilunsoed.com/",
-    "repoUrl": null,
-    "featured": true,
-    "emoji": "🧱"
-  },
-  {
-    "id": "reservasi-lab-sipil-unsoed",
-    "title": "Reservasi Laboratorium Teknik Sipil Unsoed",
-    "shortTitle": "Reservasi Lab Sipil Unsoed",
-    "description": {
-      "id": "Sebuah sistem reservasi online untuk Laboratorium Teknik Sipil Universitas Jenderal Soedirman. Sistem ini memungkinkan mahasiswa untuk memesan fasilitas laboratorium dengan mudah, serta memberikan kemudahan bagi staf laboratorium dalam mengelola jadwal dan pemesanan.",
-      "en": "An online reservation system for the Civil Engineering Laboratory of Jenderal Soedirman University. This system allows students to easily book laboratory facilities, and provides convenience for laboratory staff in managing schedules and reservations."
-    },
-    "period": {
-      "id": "Maret 2025 – October 2025",
-      "en": "March 2025 – October 2025"
-    },
-    "tags": [
-      "JavaScript",
-      "PHP",
-      "Tailwind CSS",
-      "Laravel 12",
-      "React 19",
-      "TypeScript",
-      "PostgreSQL"
-    ],
-    "category": "fullstack",
-    "image": "/img/projects/reservasi-lab-sipil.png",
-    "liveUrl": "https://reservasi.labsipilunsoed.com/",
-    "repoUrl": null,
-    "featured": true,
-    "emoji": "📅"
   }
 ]

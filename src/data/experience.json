@@ -1,5 +1,33 @@
 [
   {
+    "id": "work-redcomm",
+    "type": "work",
+    "title": {
+      "id": "Full-stack Engineer",
+      "en": "Full-stack Engineer"
+    },
+    "organization": "Redcomm Indonesia",
+    "period": {
+      "id": "Juli 2026 – Sekarang",
+      "en": "July 2026 – Present"
+    },
+    "location": "WFA (Remote)",
+    "description": {
+      "id": [
+        "Membangun dan memelihara aplikasi internal enterprise untuk Redcomm Indonesia menggunakan Laravel, Nuxt.js, Docker, MySQL, dan Redis.",
+        "Merancang antarmuka pengguna yang responsif dan interaktif serta memberikan konsultasi teknis yang disesuaikan dengan kebutuhan klien dan stakeholder internal.",
+        "Memanfaatkan framework dan tool modern—termasuk Next.js, React.js, Astro.js, dan caching backend lanjutan—untuk menghadirkan solusi web berkinerja tinggi.",
+        "Mengelola version control dan kolaborasi menggunakan GitHub serta alat deployment internal khusus."
+      ],
+      "en": [
+        "Built and maintained enterprise-grade internal applications for Redcomm Indonesia utilizing Laravel, Nuxt.js, Docker, MySQL, and Redis.",
+        "Designed responsive, interactive user interfaces and provided technical consultation tailored to client and internal stakeholder requirements.",
+        "Leveraged modern frameworks and tools—including Next.js, React.js, Astro.js, and advanced backend caching—to deliver high-performance web solutions.",
+        "Managed version control and collaboration workflows using GitHub along with specialized internal deployment tools."
+      ]
+    }
+  },
+  {
     "id": "work-web-developer",
     "type": "work",
     "title": {
@@ -14,14 +42,44 @@
     "location": "Remote",
     "description": {
       "id": [
-        "Mengembangkan website responsif dan interaktif berdasarkan kebutuhan klien.",
-        "Memberikan layanan konsultasi untuk website klien.",
+        "Mengembangkan website yang responsif dan interaktif berdasarkan kebutuhan dan minat klien.",
+        "Memberikan layanan konsultasi teknis untuk website klien.",
         "Memanfaatkan teknologi modern seperti Bootstrap, Tailwind CSS, Astro.js, React.js, Next.js, dan GitHub."
       ],
       "en": [
-        "Developing responsive and interactive websites based on client requirements.",
-        "Providing consultation services for client websites.",
-        "Utilizing modern technologies such as Bootstrap, Tailwind CSS, Astro.js, React.js, Next.js, and GitHub."
+        "Developed responsive and interactive websites based on client interests.",
+        "Provided consultation services for clients' websites.",
+        "Utilized the latest and modern technology stacks, including Bootstrap, Tailwind CSS, Astro.js, React.js, Next.js, and GitHub."
+      ]
+    }
+  },
+  {
+    "id": "work-aslab",
+    "type": "work",
+    "title": {
+      "id": "Teaching Assistant – Laboratorium Informatika",
+      "en": "Teaching Assistant – Informatics Laboratory"
+    },
+    "organization": "Universitas Jenderal Soedirman",
+    "period": {
+      "id": "Januari 2025 – Sekarang",
+      "en": "January 2025 – Present"
+    },
+    "location": "Purwokerto, Jawa Tengah",
+    "description": {
+      "id": [
+        "Mendampingi sesi praktikum untuk mata kuliah Sistem Digital, Pemrograman Berorientasi Objek, Pemrograman Mobile, Pemrograman Web, dan Basis Data.",
+        "Membimbing mahasiswa melalui latihan praktikum serta menjelaskan konsep fundamental dan aplikasi di dunia nyata.",
+        "Menyiapkan materi pendukung dan menangani troubleshooting teknis selama sesi praktikum di laboratorium.",
+        "Mengevaluasi hasil tugas mahasiswa dan memberikan umpan balik konstruktif untuk meningkatkan pemahaman dan performa.",
+        "Berkontribusi meningkatkan mutu pembelajaran laboratorium dengan pendekatan interaktif dan aplikatif."
+      ],
+      "en": [
+        "Assisted in laboratory sessions for Digital Systems, Object-Oriented Programming, Mobile Programming, Web Programming, and Database courses.",
+        "Guided students through practical exercises, explaining fundamental concepts and real-world applications.",
+        "Prepared supporting materials and provided technical troubleshooting during lab sessions.",
+        "Evaluated student work and offered constructive feedback to improve understanding and performance.",
+        "Contributed to enhancing the quality of laboratory learning with interactive and hands-on approaches."
       ]
     }
   },
@@ -29,10 +87,10 @@
     "id": "org-hmif-saintek",
     "type": "organization",
     "title": {
-      "id": "Staf Divisi Sains dan Teknologi",
-      "en": "Staff of Science and Technology Division"
+      "id": "Sains dan Teknologi",
+      "en": "Science and Technology"
     },
-    "organization": "Himpunan Mahasiswa Informatika Unsoed (HMIF) 2025",
+    "organization": "Himpunan Mahasiswa Informatika Unsoed",
     "period": {
       "id": "Februari 2025 – Desember 2025",
       "en": "February 2025 – December 2025"
@@ -40,14 +98,14 @@
     "location": "Purwokerto, Jawa Tengah",
     "description": {
       "id": [
-        "Memfasilitasi pengembangan akademik dan teknis mahasiswa Informatika melalui program kerja seperti workshop dan seminar teknologi.",
-        "Mengelola informasi terkait kompetisi teknologi tingkat nasional (GEMASTIK, PKM) untuk mendorong partisipasi mahasiswa.",
-        "Berkolaborasi dalam penyelenggaraan 'Soedirman Technophoria', event tingkat nasional yang menampilkan kompetisi web development."
+        "Memfasilitasi pengembangan akademik dan teknis mahasiswa Informatika melalui program kerja workshop, kelompok belajar, dan seminar teknologi.",
+        "Mengelola dan mengkurasi informasi mengenai kompetisi teknologi tingkat nasional (seperti GEMASTIK dan PKM) guna mendorong partisipasi dan prestasi mahasiswa.",
+        "Berkolaborasi menyelenggarakan 'Soedirman Technophoria', ajang nasional yang mencakup kompetisi web development dan seminar teknologi masa kini."
       ],
       "en": [
-        "Facilitating the academic and technical development of Informatics students through work programs such as technology workshops and seminars.",
-        "Managing information related to national-level technology competitions (GEMASTIK, PKM) to encourage student participation.",
-        "Collaborating in organizing 'Soedirman Technophoria', a national-level event featuring web development competitions."
+        "Facilitated the academic and technical development of Informatics students through work programs such as workshops, study groups, and technology seminars.",
+        "Managed and curated information regarding national-level tech competitions (such as GEMASTIK and PKM) to encourage student participation and achievement.",
+        "Collaborated in organizing 'Soedirman Technophoria', a national-level event featuring web development competitions and seminars to introduce emerging technologies to the public."
       ]
     }
   },
@@ -58,7 +116,7 @@
       "id": "Head of Community",
       "en": "Head of Community"
     },
-    "organization": "Soedirman Software Developer Community (SSDC) 2025",
+    "organization": "Soedirman Software Developer Community (SSDC)",
     "period": {
       "id": "Februari 2025 – Desember 2025",
       "en": "February 2025 – December 2025"
@@ -66,14 +124,14 @@
     "location": "Purwokerto, Jawa Tengah",
     "description": {
       "id": [
-        "Memimpin komunitas developer mahasiswa yang berfokus pada pembelajaran kolaboratif di bidang software engineering.",
-        "Membangun forum diskusi dan sesi belajar rutin untuk berbagi pengetahuan tentang tech stack modern.",
-        "Mengkoordinasikan partisipasi anggota dalam hackathon dan kompetisi coding."
+        "Memimpin komunitas developer mahasiswa yang berfokus menciptakan iklim belajar kolaboratif dalam software engineering dan pemrograman.",
+        "Membentuk forum diskusi dan sesi studi rutin untuk memfasilitasi pertukaran wawasan terkait tech stack modern dan best practice industri.",
+        "Mengkoordinasikan keikutsertaan anggota dalam hackathon dan kompetisi coding, serta mengarahkan proyek open-source kolaboratif."
       ],
       "en": [
-        "Leading a student developer community focused on collaborative learning in software engineering.",
-        "Building discussion forums and regular study sessions to share knowledge about modern tech stacks.",
-        "Coordinating member participation in hackathons and coding competitions."
+        "Led a student developer community focused on fostering a collaborative learning environment for software engineering and programming.",
+        "Established regular discussion forums and study sessions to facilitate knowledge sharing on modern tech stacks and best practices.",
+        "Coordinated member participation in hackathons and coding competitions, while also overseeing collaborative open-source projects to build practical portfolios."
       ]
     }
   },
@@ -94,12 +152,14 @@
       "id": [
         "Program kerja dari Divisi Pengembangan Sumber Daya Mahasiswa BEM-U Unsoed.",
         "Mengumpulkan data mahasiswa baru Unsoed.",
-        "Mengembangkan website Soedirman Student Summit berisi informasi penting untuk mahasiswa baru."
+        "Membuat konten dengan informasi tambahan bagi mahasiswa baru Unsoed.",
+        "Mengembangkan website Soedirman Student Summit yang memuat informasi penting bagi mahasiswa baru Unsoed."
       ],
       "en": [
-        "Work program from the Student Resource Development Division of BEM-U Unsoed.",
-        "Collecting data on new students of Unsoed.",
-        "Developing the Soedirman Student Summit website containing important information for new students."
+        "A work program from the Student Resource Development Division of BEM-U Unsoed.",
+        "Collected data on new Unsoed students.",
+        "Created content with additional information for new Unsoed students.",
+        "Developed the Soedirman Student Summit website, containing essential information for new Unsoed students."
       ]
     }
   },
@@ -110,7 +170,7 @@
       "id": "Project Manager",
       "en": "Project Manager"
     },
-    "organization": "Soedirman Digital School 2024",
+    "organization": "Soedirman Digital School",
     "period": {
       "id": "Mei 2024 – Agustus 2024",
       "en": "May 2024 – August 2024"
@@ -118,14 +178,14 @@
     "location": "Purwokerto, Jawa Tengah",
     "description": {
       "id": [
-        "Mengembangkan rencana kegiatan keseluruhan, termasuk menentukan tema, tujuan, dan format event.",
-        "Mengkoordinasikan dan mendelegasikan tugas sesuai kemampuan dan tanggung jawab setiap anggota tim.",
-        "Mengembangkan strategi komunikasi untuk menarik peserta, termasuk penggunaan media sosial."
+        "Menyusun rencana kegiatan menyeluruh, termasuk merumuskan tema, tujuan, dan format acara.",
+        "Mengkoordinasikan dan mendelegasikan tugas sesuai kompetensi serta tanggung jawab tiap anggota tim.",
+        "Merancang strategi komunikasi efektif guna menjaring peserta, termasuk optimalisasi media sosial."
       ],
       "en": [
-        "Developing the overall activity plan, including determining the theme, objectives, and format of the event.",
-        "Coordinating and delegating tasks according to the skills and responsibilities of each team member.",
-        "Developing communication strategies to attract participants, including the use of social media."
+        "Developed overall activity plans, including determining the theme, objectives, and format of the event.",
+        "Coordinated and delegated tasks according to the abilities and responsibilities of each team member.",
+        "Developed communication strategies to attract participants, including the use of social media."
       ]
     }
   },
@@ -146,12 +206,44 @@
       "id": [
         "Program kerja dari Divisi Pengembangan Sumber Daya Mahasiswa BEM-U Unsoed.",
         "Mengumpulkan data mahasiswa baru Unsoed.",
+        "Membuat konten dengan informasi tambahan bagi mahasiswa baru Unsoed.",
         "Mengembangkan website Soedirman Student Summit 2024 menggunakan Astro.js dan Tailwind CSS."
       ],
       "en": [
-        "Work program from the Student Resource Development Division of BEM-U Unsoed.",
-        "Collecting data on new students of Unsoed.",
-        "Developing the Soedirman Student Summit 2024 website using Astro.js and Tailwind CSS."
+        "A work program from the Student Resource Development Division of BEM-U Unsoed.",
+        "Collected data on new Unsoed students.",
+        "Created content with additional information for new Unsoed students.",
+        "Developed the Soedirman Student Summit 2024 website using Astro.js and Tailwind CSS."
+      ]
+    }
+  },
+  {
+    "id": "vol-hmif-pdd",
+    "type": "volunteer",
+    "title": {
+      "id": "Publikasi, Dekorasi, dan Dokumentasi",
+      "en": "Publication, Decoration, and Documentation"
+    },
+    "organization": "Himpunan Mahasiswa Informatika Unsoed",
+    "period": {
+      "id": "Oktober 2023 – Desember 2023",
+      "en": "October 2023 – December 2023"
+    },
+    "location": "Purwokerto, Jawa Tengah",
+    "description": {
+      "id": [
+        "Program kerja dari Divisi Sains dan Teknologi HMIF.",
+        "Mendokumentasikan seluruh rangkaian kegiatan selama acara berlangsung.",
+        "Membuat buku panduan (guidebook) kegiatan.",
+        "Membuat sertifikat untuk peserta, panitia, pemandu acara, guest star, dan pemenang kompetisi.",
+        "Memproduksi video after-movie kegiatan."
+      ],
+      "en": [
+        "A work program from the Science and Technology Division of HMIF.",
+        "Documented activities during events.",
+        "Created guidebooks.",
+        "Produced certificates for participants, committees, hosts, guest stars, and competition winners.",
+        "Created an after-movie."
       ]
     }
   }

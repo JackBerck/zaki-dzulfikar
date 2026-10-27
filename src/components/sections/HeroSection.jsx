@@ -134,7 +134,7 @@ export default function HeroSection() {
             style={{ animationDelay: "0.5s" }}
           >
             {[
-              { value: "5+", label: t.hero.stats[0].label },
+              { value: "7+", label: t.hero.stats[0].label },
               { value: "2+", label: t.hero.stats[1].label },
               { value: "3+", label: t.hero.stats[2].label },
             ].map((stat) => (

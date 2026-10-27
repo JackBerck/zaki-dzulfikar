@@ -7,6 +7,7 @@
       "skills": [
         { "name": "Next.js", "logo": "/img/tools/nextjs2.svg" },
         { "name": "React.js", "logo": "/img/tools/react.svg" },
+        { "name": "Nuxt.js", "logo": "/img/tools/nuxt.svg" },
         { "name": "Svelte", "logo": "/img/tools/sveltejs.svg" },
         { "name": "Astro.js", "logo": "/img/tools/astro.svg" },
         { "name": "TypeScript", "logo": "/img/tools/typescript.svg" },
@@ -34,6 +35,7 @@
       "title": "Tools & Others",
       "icon": "🛠️",
       "skills": [
+        { "name": "Docker", "logo": "/img/tools/docker.svg" },
         { "name": "Figma", "logo": "/img/tools/figma.svg" },
         { "name": "Git", "logo": "/img/tools/git.svg" },
         { "name": "GitHub", "logo": "/img/tools/github.svg" },

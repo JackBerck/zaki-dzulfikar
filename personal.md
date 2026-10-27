@@ -20,6 +20,15 @@ Relevant Courses: Programming Algorithms, Data Structures, Discrete Mathematics,
 
 ## EXPERIENCE
 
+**Full-stack Engineer at Redcomm Indonesia**  
+July 2026 - Present  
+Internship (WFA)  
+
+- Built and maintained enterprise-grade internal applications for Redcomm Indonesia utilizing Laravel, Nuxt.js, Docker, MySQL, and Redis.
+- Designed responsive, interactive user interfaces and provided technical consultation tailored to client and internal stakeholder requirements.
+- Leveraged modern frameworks and tools—including Next.js, React.js, Astro.js, and advanced backend caching—to deliver high-performance web solutions.
+- Managed version control and collaboration workflows using GitHub along with specialized internal deployment tools.
+
 **Web Developer**  
 August 2025 - Present  
 Self Employed  
@@ -27,6 +36,16 @@ Self Employed
 - Developed responsive and interactive websites based on client interests.
 - Provided consultation services for clients' websites.
 - Utilized the latest and modern technology stacks, including Bootstrap, Tailwind CSS, Astro.js, React.js, Next,js and GitHub.
+
+**Teaching Assistant – Informatics Laboratory**  
+January 2025 - Present  
+Teacher  
+
+- Assisted in laboratory sessions for Digital Systems, Object-Oriented Programming, Mobile Programming, Web Programming, and Database courses.
+- Guided students through practical exercises, explaining fundamental concepts and real-world applications.
+- Prepared supporting materials and provided technical troubleshooting during lab sessions.
+- Evaluated student work and offered constructive feedback to improve understanding and performance.
+- Contributed to enhancing the quality of laboratory learning with interactive and hands-on approaches.
 
 ## PROJECT
 
@@ -36,6 +55,20 @@ October 2025 - February 2026
 - Livetix is a modern event ticketing platform designed to streamline event management, enabling seamless online and offline ticket sales with secure QR code validation.
 - The system implements a scalable Action-Service architecture to support multi-channel sales, affiliate tracking with commission logic, real-time analytics, and complex Role-Based Access Control (RBAC).
 - Technologies: Laravel 12, React 19, TypeScript, Inertia.js, PostgreSQL, Redis, and Tailwind CSS.
+
+### Landing Page Laboratorium Teknik Sipil, Website
+March 2025 - October 2025
+
+- Developed a professional and informative landing page for the Civil Engineering Laboratory to showcase their facilities, research, and services.
+- The platform provides essential information for students and external partners, serving as a digital front for the lab's activities and capabilities.
+- Technologies: Laravel 12, React 19, TypeScript, Inertia.js, MySQL, and Tailwind CSS.
+
+### Reservasi Laboratorium Teknik Sipil, Website
+March 2025 - October 2025
+
+- Designed and implemented a web-based reservation system for the Civil Engineering Laboratory, allowing students and external users to check availability, book laboratory equipment or facilities, and manage their reservations online.
+- The system was built to streamline the booking process, manage resource allocation efficiently, and provide users with real-time confirmation of their booking status.
+- Technologies: Laravel 12, React 19, TypeScript, Inertia.js, MySQL, and Tailwind CSS.
 
 ### Soedirman Student Summit 2025, Website
 April 2025 – August 2025
