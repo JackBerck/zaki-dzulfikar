@@ -11,19 +11,45 @@
       "id": "Juli 2026 – Sekarang",
       "en": "July 2026 – Present"
     },
-    "location": "WFA (Remote)",
+    "location": "WFA (Remote) · Magang",
     "description": {
       "id": [
-        "Membangun dan memelihara aplikasi internal enterprise untuk Redcomm Indonesia menggunakan Laravel, Nuxt.js, Docker, MySQL, dan Redis.",
-        "Merancang antarmuka pengguna yang responsif dan interaktif serta memberikan konsultasi teknis yang disesuaikan dengan kebutuhan klien dan stakeholder internal.",
-        "Memanfaatkan framework dan tool modern—termasuk Next.js, React.js, Astro.js, dan caching backend lanjutan—untuk menghadirkan solusi web berkinerja tinggi.",
-        "Mengelola version control dan kolaborasi menggunakan GitHub serta alat deployment internal khusus."
+        "Mengembangkan dan memelihara aplikasi web internal menggunakan Laravel, Nuxt.js, Docker, MySQL, dan Redis.",
+        "Mengimplementasikan antarmuka pengguna yang responsif dan fungsionalitas backend sesuai kebutuhan bisnis dan stakeholder.",
+        "Berkolaborasi dengan tim pengembang melalui alur kerja berbasis Git dan proses deployment internal."
       ],
       "en": [
-        "Built and maintained enterprise-grade internal applications for Redcomm Indonesia utilizing Laravel, Nuxt.js, Docker, MySQL, and Redis.",
-        "Designed responsive, interactive user interfaces and provided technical consultation tailored to client and internal stakeholder requirements.",
-        "Leveraged modern frameworks and tools—including Next.js, React.js, Astro.js, and advanced backend caching—to deliver high-performance web solutions.",
-        "Managed version control and collaboration workflows using GitHub along with specialized internal deployment tools."
+        "Develop and maintain internal web applications using Laravel, Nuxt.js, Docker, MySQL, and Redis.",
+        "Implement responsive user interfaces and backend functionalities based on business requirements and stakeholder needs.",
+        "Collaborate with development teams through Git-based workflows and internal deployment processes."
+      ]
+    }
+  },
+  {
+    "id": "work-ziggs",
+    "type": "work",
+    "title": {
+      "id": "Web Developer Paruh Waktu",
+      "en": "Part-time Web Developer"
+    },
+    "organization": "Ziggs.id",
+    "period": {
+      "id": "Oktober 2025 – Sekarang",
+      "en": "October 2025 – Present"
+    },
+    "location": "Remote",
+    "description": {
+      "id": [
+        "Memelihara dan meningkatkan aplikasi web produksi Ziggs.id melalui peningkatan fitur, perbaikan bug, dan dukungan teknis berkelanjutan.",
+        "Mengelola deployment produksi dan tugas operasional pada Linux VPS, termasuk akses server via SSH, health check aplikasi, dan manajemen layanan PHP-FPM.",
+        "Mengimplementasikan dan memelihara workflow CI/CD otomatis dengan GitHub Actions untuk mempermudah deployment dari repository ke server produksi.",
+        "Melakukan troubleshooting produksi dan maintenance aplikasi Laravel untuk meningkatkan keandalan deployment dan ketersediaan layanan."
+      ],
+      "en": [
+        "Maintain and enhance Ziggs.id's production web application through ongoing feature improvements, bug fixes, and technical support.",
+        "Manage production deployment and operational tasks on a Linux VPS, including SSH-based server access, application health checks, and PHP-FPM service management.",
+        "Implement and maintain automated CI/CD workflows using GitHub Actions to streamline application deployment from the repository to the production server.",
+        "Perform production troubleshooting and Laravel application maintenance to improve deployment reliability and service availability."
       ]
     }
   },
@@ -42,14 +68,12 @@
     "location": "Remote",
     "description": {
       "id": [
-        "Mengembangkan website yang responsif dan interaktif berdasarkan kebutuhan dan minat klien.",
-        "Memberikan layanan konsultasi teknis untuk website klien.",
-        "Memanfaatkan teknologi modern seperti Bootstrap, Tailwind CSS, Astro.js, React.js, Next.js, dan GitHub."
+        "Mengembangkan dan menyerahkan aplikasi web responsif sesuai kebutuhan klien.",
+        "Memberikan konsultasi teknis, implementasi, dan pemeliharaan website secara berkelanjutan."
       ],
       "en": [
-        "Developed responsive and interactive websites based on client interests.",
-        "Provided consultation services for clients' websites.",
-        "Utilized the latest and modern technology stacks, including Bootstrap, Tailwind CSS, Astro.js, React.js, Next.js, and GitHub."
+        "Develop and deliver responsive web applications tailored to client requirements.",
+        "Provide technical consultation, implementation, and ongoing website maintenance."
       ]
     }
   },
@@ -68,18 +92,12 @@
     "location": "Purwokerto, Jawa Tengah",
     "description": {
       "id": [
-        "Mendampingi sesi praktikum untuk mata kuliah Sistem Digital, Pemrograman Berorientasi Objek, Pemrograman Mobile, Pemrograman Web, dan Basis Data.",
-        "Membimbing mahasiswa melalui latihan praktikum serta menjelaskan konsep fundamental dan aplikasi di dunia nyata.",
-        "Menyiapkan materi pendukung dan menangani troubleshooting teknis selama sesi praktikum di laboratorium.",
-        "Mengevaluasi hasil tugas mahasiswa dan memberikan umpan balik konstruktif untuk meningkatkan pemahaman dan performa.",
-        "Berkontribusi meningkatkan mutu pembelajaran laboratorium dengan pendekatan interaktif dan aplikatif."
+        "Mendampingi sesi praktikum Sistem Digital, Sistem Basis Data, dan Pemrograman Berorientasi Objek, membimbing mahasiswa memahami konsep teknis melalui latihan langsung.",
+        "Mengoordinasikan kegiatan laboratorium dan membantu sesama asisten dalam menyiapkan materi, menilai tugas, dan menyelesaikan kendala teknis."
       ],
       "en": [
-        "Assisted in laboratory sessions for Digital Systems, Object-Oriented Programming, Mobile Programming, Web Programming, and Database courses.",
-        "Guided students through practical exercises, explaining fundamental concepts and real-world applications.",
-        "Prepared supporting materials and provided technical troubleshooting during lab sessions.",
-        "Evaluated student work and offered constructive feedback to improve understanding and performance.",
-        "Contributed to enhancing the quality of laboratory learning with interactive and hands-on approaches."
+        "Assisted practical laboratory sessions in Digital Systems, Database Systems, and Object-Oriented Programming, guiding students through technical concepts and hands-on exercises.",
+        "Coordinated laboratory activities and supported fellow teaching assistants in preparing learning materials, evaluating assignments, and resolving technical issues."
       ]
     }
   },
@@ -132,6 +150,30 @@
         "Led a student developer community focused on fostering a collaborative learning environment for software engineering and programming.",
         "Established regular discussion forums and study sessions to facilitate knowledge sharing on modern tech stacks and best practices.",
         "Coordinated member participation in hackathons and coding competitions, while also overseeing collaborative open-source projects to build practical portfolios."
+      ]
+    }
+  },
+  {
+    "id": "vol-pertamina-uco",
+    "type": "volunteer",
+    "title": {
+      "id": "Relawan Acara – Floor Crew",
+      "en": "Event Volunteer – Floor Crew"
+    },
+    "organization": "Pilot Program Pengumpulan Minyak Jelantah – Pertamina x Koperasi Desa Merah Putih",
+    "period": {
+      "id": "Oktober 2026",
+      "en": "October 2026"
+    },
+    "location": "Indonesia",
+    "description": {
+      "id": [
+        "Mendukung operasional dan koordinasi acara di lokasi agar pelaksanaan program pilot berjalan lancar.",
+        "Membantu manajemen lantai, pendampingan peserta, dan koordinasi selama acara berlangsung."
+      ],
+      "en": [
+        "Supported on-site event operations and coordination to ensure smooth execution of the pilot program.",
+        "Assisted with floor management, participant guidance, and coordination throughout the event."
       ]
     }
   },

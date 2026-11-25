@@ -236,7 +236,9 @@ export function LanguageProvider({ children }) {
 
   useEffect(() => {
     const savedLang = localStorage.getItem("language");
-    if (savedLang) {
+    if (savedLang && translations[savedLang]) {
+      // Read after mount to keep SSR/hydration markup consistent.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setLanguage(savedLang);
     }
   }, []);

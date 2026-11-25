@@ -6,6 +6,15 @@ import NeoButton from "@/components/ui/NeoButton";
 import { Menu, X, Globe } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 
+const SECTION_IDS = [
+  "about",
+  "skills",
+  "projects",
+  "experience",
+  "certificates",
+  "contact",
+];
+
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -26,8 +35,7 @@ export default function Navbar() {
       setScrolled(window.scrollY > 20);
 
       // Highlight active section
-      const sections = navLinks.map((link) => link.href.replace("#", ""));
-      for (const section of [...sections].reverse()) {
+      for (const section of [...SECTION_IDS].reverse()) {
         const el = document.getElementById(section);
         if (el && window.scrollY >= el.offsetTop - 120) {
           setActiveSection(section);

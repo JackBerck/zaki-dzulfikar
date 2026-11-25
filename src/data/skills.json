@@ -23,6 +23,8 @@
       "skills": [
         { "name": "Laravel", "logo": "/img/tools/laravel.svg" },
         { "name": "Go", "logo": "/img/tools/go.svg" },
+        { "name": "GoFiber", "logo": "/img/tools/go.svg" },
+        { "name": "GoGin", "logo": "/img/tools/go.svg" },
         { "name": "PHP", "logo": "/img/tools/php.svg" },
         { "name": "Node.js", "logo": "/img/tools/nodejs.svg" },
         { "name": "PostgreSQL", "logo": "/img/tools/postgresql.svg" },
@@ -39,7 +41,10 @@
         { "name": "Figma", "logo": "/img/tools/figma.svg" },
         { "name": "Git", "logo": "/img/tools/git.svg" },
         { "name": "GitHub", "logo": "/img/tools/github.svg" },
-        { "name": "Linux", "logo": "/img/tools/linux.svg" }
+        { "name": "GitHub Actions", "logo": "/img/tools/github.svg" },
+        { "name": "CI/CD", "logo": "/img/tools/git.svg" },
+        { "name": "Linux", "logo": "/img/tools/linux.svg" },
+        { "name": "VPS", "logo": "/img/tools/linux.svg" }
       ]
     }
   ]
